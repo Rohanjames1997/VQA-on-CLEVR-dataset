@@ -14,8 +14,7 @@ Color: Gray, Cyan, Blue, Purple, Brown… (8 colors)
 The questions test the understanding regarding the various type of relationships between these objects. The relationships include the understanding of the position relative to the other objects i.e which of two objects lies to the left/right of the other or which of the two objects lies in front of/behind the other. 
 For addressing the task at hand,we have trained the dataset on three different models and chosen the model with the best relative accuracy score. Model architectures used are:
 1.  CNN-LSTM model
-2.  Skip connection CNN – LSTM model
-3.  CNN –LSTM model with Stacked Attention
+2.  CNN –LSTM model with Stacked Attention
 
 
 CNN –LSTM Model
@@ -24,22 +23,6 @@ CNN head outputs 16 feature maps of size 8x8
 The question vector and flatten image vector are concatenated and fed into a series of dense layers
 
 ![image1](https://user-images.githubusercontent.com/28951885/52464172-e7302f80-2b9f-11e9-906b-e3679035e1ea.jpg)
-
-
-
-
-
-Skip connection CNN – LSTM Model
-The model architecture has been partly inspired by skip connections used in the architecture of YOLO v2.
-Skip architecture skips some layer in the neural network and feeds the output of one layer as the input to the next layer as well as some other layer (instead of only the next layer ).
-The model adds skip connections to the CNN head of the vanilla CNN – LSTM Model.
-The information that we had in the primary layers can be fed explicitly to the later layers using the skip architecture.
-
-      		 	Source :  https://arxiv.org/pdf/1603.04992.pdf
-
-![unnamed 1](https://user-images.githubusercontent.com/28951885/52464182-ed261080-2b9f-11e9-8521-308636638344.png)
-
-
 
 
 
