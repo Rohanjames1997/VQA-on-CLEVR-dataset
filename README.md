@@ -26,6 +26,9 @@ The question vector and flatten image vector are concatenated and fed into a ser
 ![image1](https://user-images.githubusercontent.com/28951885/52464172-e7302f80-2b9f-11e9-906b-e3679035e1ea.jpg)
 
 
+
+
+
 Skip connection CNN – LSTM Model
 The model architecture has been partly inspired by skip connections used in the architecture of YOLO v2.
 Skip architecture skips some layer in the neural network and feeds the output of one layer as the input to the next layer as well as some other layer (instead of only the next layer ).
@@ -35,6 +38,10 @@ The information that we had in the primary layers can be fed explicitly to the l
       		 	Source :  https://arxiv.org/pdf/1603.04992.pdf
 
 ![unnamed 1](https://user-images.githubusercontent.com/28951885/52464182-ed261080-2b9f-11e9-8521-308636638344.png)
+
+
+
+
 
 
 CNN –LSTM Model with Stacked Attention
@@ -47,7 +54,12 @@ As in the paper,we have used 2 attention layers to capture region-wise relations
 ![unnamed](https://user-images.githubusercontent.com/28951885/52464179-eac3b680-2b9f-11e9-9d98-7357092f4c38.png)
 
 
+
+
+
 ![attn24](https://user-images.githubusercontent.com/28951885/52464173-e8615c80-2b9f-11e9-82a8-469b6e9d485e.jpg)
+
+
 
 
 To find the optimum parameters We tried to implement the Grid Search on the various the various hyper-parameters like number of dense units ,epochs,learning rate,etc . however later we came to know that one can’t apply gridsearch on multi-input models like the ones being used to solve the given problem statement. Thus various parameters like epochs,learning rate were manually tested by running various models and analysing the results. It was found that the optimizer Adadelta() at the default parameters preformed the best among the various other parameters like Adam, SGD , etc.  
