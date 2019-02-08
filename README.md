@@ -34,7 +34,7 @@ The information that we had in the primary layers can be fed explicitly to the l
 
       		 	Source :  https://arxiv.org/pdf/1603.04992.pdf
 
-
+![unnamed](https://user-images.githubusercontent.com/28951885/52464179-eac3b680-2b9f-11e9-9d98-7357092f4c38.png)
 
 
 CNN –LSTM Model with Stacked Attention
@@ -43,6 +43,11 @@ Stacked Attention Networks for Image Question Answering.
 Link to the paper :
 https://www.cvfoundation.org/openaccess/content_cvpr_2016/papers/Yang_Stacked_Attention_Networks_CVPR_2016_paper.pdf
 As in the paper,we have used 2 attention layers to capture region-wise relations between the objects in the image and objects referred to in the question.
+
+![attn24](https://user-images.githubusercontent.com/28951885/52464173-e8615c80-2b9f-11e9-82a8-469b6e9d485e.jpg)
+
+![unnamed 1](https://user-images.githubusercontent.com/28951885/52464182-ed261080-2b9f-11e9-8521-308636638344.png)
+
 
 
 To find the optimum parameters We tried to implement the Grid Search on the various the various hyper-parameters like number of dense units ,epochs,learning rate,etc . however later we came to know that one can’t apply gridsearch on multi-input models like the ones being used to solve the given problem statement. Thus various parameters like epochs,learning rate were manually tested by running various models and analysing the results. It was found that the optimizer Adadelta() at the default parameters preformed the best among the various other parameters like Adam, SGD , etc.  
