@@ -23,6 +23,8 @@ Pretrained 50-d GloVe embeddings have been used for the embedding layer of LSTM
 CNN head outputs 16 feature maps of size 8x8
 The question vector and flatten image vector are concatenated and fed into a series of dense layers
 
+![image1](https://user-images.githubusercontent.com/28951885/52464172-e7302f80-2b9f-11e9-906b-e3679035e1ea.jpg)
+
 
 Skip connection CNN – LSTM Model
 The model architecture has been partly inspired by skip connections used in the architecture of YOLO v2.
